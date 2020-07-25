@@ -11,7 +11,7 @@ class whatsapp:
     def whatsapp_login(self):
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument("--window-size=1920,1080")
-        chrome_options.add_argument("user-data-dir=C:\\Users\\Dev\\AppData\\Local\\Google\\Chrome\\User Data\\Default")
+        chrome_options.add_argument("user-data-dir=YOUR-DIRECTORY-HERE")
         self.driver = webdriver.Chrome(ChromeDriverManager().install(),options=chrome_options)
         base_url = "https://web.whatsapp.com/"
         self.driver.get(base_url)
